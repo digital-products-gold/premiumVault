@@ -58,14 +58,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 </p>
 
                 <div className="flex items-center justify-between mt-auto">
-                    <div className="flex flex-col">
-                        {price && <span className="text-gray-500 text-xs line-through">{price}</span>}
-                        <span className="text-pink-400 font-bold text-lg">{salePrice || 'Free Updates'}</span>
-                    </div>
+                    {(price || salePrice) && (
+                        <>
+                            <div className="flex flex-col">
+                                {price && <span className="text-gray-500 text-xs line-through">{price}</span>}
+                                <span className="text-pink-400 font-bold text-lg">{salePrice || 'Free Updates'}</span>
+                            </div>
 
-                    <button className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-pink-500 group-hover:border-pink-500 transition-all duration-300">
-                        <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-white" />
-                    </button>
+                            <button className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-pink-500 group-hover:border-pink-500 transition-all duration-300">
+                                <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                            </button>
+                        </>
+                    )}
                 </div>
             </div>
         </div>

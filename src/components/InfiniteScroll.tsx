@@ -14,59 +14,9 @@ const ProductItem = ({ image, title, description }: { image: string, title: stri
     </div>
 );
 
+import { products } from '../data/products';
+
 export const InfiniteScroll: React.FC = () => {
-    const products = [
-        {
-            title: "Automations",
-            img: "/images/il_1588xN.7134082224_rakg.webp",
-            desc: "Ready-made automation scripts and workflows for business efficiency. Includes Zapier templates, Python scripts, and no-code automation solutions for various platforms."
-        },
-        {
-            title: "Adobe Suite Assets",
-            img: "/images/il_1588xN.7134082166_7rv6.webp",
-            desc: "Premium design assets for the entire Adobe Creative Suite. Includes templates, actions, brushes, patterns, and effects for professional graphic design projects."
-        },
-        {
-            title: "Kids Coloring Books",
-            img: "/images/il_1588xN.7133473609_r1nz.webp",
-            desc: "Educational coloring pages and activity books for children of all ages. Includes themed collections, educational worksheets, puzzles, and developmental activities."
-        },
-        {
-            title: "Presentations Pack",
-            img: "/images/il_1588xN.7054134176_nl4u.webp",
-            desc: "Professional PowerPoint and Keynote templates with modern designs. Includes business pitches, educational content, marketing presentations, and infographic slides."
-        },
-        {
-            title: "Excel Templates",
-            img: "/images/il_1588xN.6864099581_412w.webp",
-            desc: "Comprehensive business and financial spreadsheet templates. Includes budgeting tools, project management trackers, inventory systems, and financial analysis dashboards."
-        },
-        {
-            title: "HD Stock Videos",
-            img: "/images/il_1588xN.6816109942_81fb.webp",
-            desc: "High-quality 4K stock footage for commercial projects. Includes business, lifestyle, nature, and urban scenes with professional color grading and editing options."
-        },
-        {
-            title: "Royalty Free Music",
-            img: "/images/il_1588xN.6816109892_tv9a.webp",
-            desc: "Professional music tracks for commercial use in videos, podcasts, and advertising. Various genres, moods, and lengths with full licensing documentation included."
-        },
-        {
-            title: "Ebooks",
-            img: "/images/il_1588xN.6816109888_xbiq.webp",
-            desc: "Ready-to-sell ebooks on trending topics with full PLR rights. Includes self-help, business, health, and lifestyle titles with professional formatting and cover designs."
-        },
-        {
-            title: "T-Shirt Designs",
-            img: "/images/il_1588xN.7134082228_23pg.webp",
-            desc: "Trendy and customizable t-shirt designs for print-on-demand businesses. Includes niche-specific designs, seasonal collections, and typography-based artwork in various styles."
-        },
-        {
-            title: "Sales Funnels",
-            img: "/images/il_1588xN.7134082718_5cvk.webp",
-            desc: "High-converting sales funnel templates for multiple niches. Complete with landing pages, email sequences, upsell pages, and checkout optimization strategies."
-        }
-    ];
 
     return (
         <section className="py-20 bg-[#030712] overflow-hidden">
@@ -80,7 +30,7 @@ export const InfiniteScroll: React.FC = () => {
             <div className="mb-8 relative w-full overflow-hidden">
                 <div className="flex gap-6 animate-scroll-left hover:[animation-play-state:paused] w-max">
                     {[...products, ...products].map((p, i) => (
-                        <ProductItem key={`row1-${i}`} image={p.img} title={p.title} description={p.desc} />
+                        <ProductItem key={`row1-${i}`} image={p.image} title={p.title} description={p.description} />
                     ))}
                 </div>
             </div>
@@ -89,7 +39,7 @@ export const InfiniteScroll: React.FC = () => {
             <div className="relative w-full overflow-hidden">
                 <div className="flex gap-6 animate-scroll-right hover:[animation-play-state:paused] w-max">
                     {[...products.reverse(), ...products].map((p, i) => (
-                        <ProductItem key={`row2-${i}`} image={p.img} title={p.title} description={p.desc} />
+                        <ProductItem key={`row2-${i}`} image={p.image} title={p.title} description={p.description} />
                     ))}
                 </div>
             </div>

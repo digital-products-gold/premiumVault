@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-gray-600">
-                            © 2024 Coaching Marketing Kit LLC. All rights reserved.
+                            © 2024 PLRMRR. All rights reserved.
                         </div>
                     </div>
 

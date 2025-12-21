@@ -52,12 +52,14 @@ export const SuccessStories: React.FC = () => {
     ];
 
     const showcaseImages = [
-        "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/6838414bb7fe70709c029d69.webp",
-        "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/6838424ace21ce672dada7b8.webp",
-        "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/6838414bb7fe7071b4029d68.webp",
-        "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1019de0446766bae4.jpeg",
-        "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1f504ae463ba10468.jpeg",
-        "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a139379a143a018679.jpeg"
+        "/p_graphic_design_1766197006044.png",
+        "/p_chatgpt_bundle_1766197022690.png",
+        "/p_midjourney_prompts_1766197041984.png",
+        "/p_faceless_reels_1766201844564.png",
+        "/p_social_media_1766201858848.png",
+        "/p_fitness_videos_1766201873323.png",
+        "/p_tshirt_designs_1766203724097.png",
+        "/p_ebooks_bundle_v2_1766243046608.png"
     ];
 
     return (
