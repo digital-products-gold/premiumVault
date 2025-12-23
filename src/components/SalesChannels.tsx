@@ -109,9 +109,9 @@ export const SalesChannels: React.FC = () => {
     ];
 
     return (
-        <section className="relative bg-[#030712] py-20 overflow-hidden">
+        <section className="relative bg-[#020617] py-20 overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-b from-pink-500/10 via-violet-500/5 to-pink-500/10 blur-[100px] opacity-30" />
+                <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-indigo-500/5 to-blue-500/5 blur-[100px] opacity-20" />
             </div>
 
             <div className="container relative mx-auto px-4 sm:px-6">
@@ -124,19 +124,19 @@ export const SalesChannels: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                     {channels.map((c, i) => (
-                        <div key={i} className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/50 rounded-xl overflow-hidden border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300">
-                            <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-violet-600/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div key={i} className="group relative bg-[#0f172a]/50 rounded-xl overflow-hidden border border-white/5 hover:border-amber-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/5">
+                            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
                             <div className="relative p-6">
                                 <div className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center">
-                                        {React.cloneElement(c.icon as React.ReactElement, { className: "w-6 h-6 text-pink-400" })}
+                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-amber-500/20 group-hover:bg-amber-500/10 transition-colors">
+                                        {React.cloneElement(c.icon as React.ReactElement, { className: "w-6 h-6 text-gray-400 group-hover:text-amber-400 transition-colors" })}
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                                        <h3 className="text-xl font-semibold text-white mb-2 font-heading">
                                             {c.name}
                                         </h3>
-                                        <p className="text-gray-400 text-sm mb-4">
+                                        <p className="text-gray-400 text-sm mb-4 leading-relaxed">
                                             {c.description}
                                         </p>
                                     </div>
@@ -144,21 +144,21 @@ export const SalesChannels: React.FC = () => {
 
                                 <div className="space-y-3 mt-6">
                                     {c.features.map((feature, idx) => (
-                                        <div key={idx} className="flex items-center gap-3 text-sm text-gray-300">
-                                            <div className="w-5 h-5 rounded-full bg-pink-500/10 flex items-center justify-center flex-shrink-0">
-                                                <div className="w-1.5 h-1.5 rounded-full bg-pink-400" />
+                                        <div key={idx} className="flex items-center gap-3 text-sm text-gray-400">
+                                            <div className="w-5 h-5 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover:bg-amber-500 transition-colors" />
                                             </div>
                                             {feature}
                                         </div>
                                     ))}
                                 </div>
 
-                                <div className="mt-6 pt-6 border-t border-pink-500/10">
-                                    <h4 className="text-sm font-medium text-pink-400 mb-2">Quick Start Guide:</h4>
+                                <div className="mt-6 pt-6 border-t border-white/5">
+                                    <h4 className="text-sm font-medium text-gray-300 mb-2 group-hover:text-amber-400 transition-colors">Quick Start Guide:</h4>
                                     <ol className="space-y-2">
                                         {c.guide.map((step, idx) => (
-                                            <li key={idx} className="text-sm text-gray-400 flex gap-2">
-                                                <span className="text-pink-400">{idx + 1}.</span>
+                                            <li key={idx} className="text-sm text-gray-500 flex gap-2">
+                                                <span className="text-gray-600 group-hover:text-amber-500 transition-colors">{idx + 1}.</span>
                                                 {step}
                                             </li>
                                         ))}

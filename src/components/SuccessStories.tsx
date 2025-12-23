@@ -63,7 +63,7 @@ export const SuccessStories: React.FC = () => {
     ];
 
     return (
-        <section id="showcase" className="py-20 lg:py-32 bg-[#030712] relative overflow-hidden">
+        <section id="showcase" className="py-20 lg:py-32 bg-[#020617] relative overflow-hidden">
             {/* Scrolling Showcase */}
             <div className="mb-24">
                 <SectionHeading
@@ -73,8 +73,8 @@ export const SuccessStories: React.FC = () => {
                 />
 
                 <div className="relative w-full overflow-hidden mt-12 group">
-                    <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#030712] to-transparent z-10"></div>
-                    <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#030712] to-transparent z-10"></div>
+                    <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#020617] to-transparent z-10"></div>
+                    <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#020617] to-transparent z-10"></div>
 
                     <div className="flex gap-8 animate-scroll-left hover:[animation-play-state:paused]" style={{ width: 'max-content' }}>
                         {[...showcaseImages, ...showcaseImages].map((img, i) => (
@@ -95,8 +95,8 @@ export const SuccessStories: React.FC = () => {
                 />
 
                 <div className="relative w-full overflow-hidden mt-12 pb-10">
-                    <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#030712] to-transparent z-10"></div>
-                    <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#030712] to-transparent z-10"></div>
+                    <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#020617] to-transparent z-20"></div>
+                    <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#020617] to-transparent z-20"></div>
 
                     <div className="flex gap-6 animate-scroll-right hover:[animation-play-state:paused]" style={{ width: 'max-content' }}>
                         {[...tweets, ...tweets].map((tweet, i) => (

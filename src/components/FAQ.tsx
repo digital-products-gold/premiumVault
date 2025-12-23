@@ -10,15 +10,15 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="border-b border-white/10 last:border-0">
+        <div className="border-b border-white/5 last:border-0">
             <button
                 className="flex items-center justify-between w-full py-6 text-left group"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span className={`text-lg font-medium transition-colors ${isOpen ? 'text-pink-400' : 'text-white group-hover:text-pink-400'}`}>
+                <span className={`text-lg font-medium transition-colors font-heading ${isOpen ? 'text-amber-400' : 'text-white group-hover:text-amber-400'}`}>
                     {question}
                 </span>
-                <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-pink-400' : ''}`} />
+                <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-amber-400' : ''}`} />
             </button>
             <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100 mb-6' : 'max-h-0 opacity-0'}`}
@@ -42,10 +42,10 @@ export const FAQ: React.FC = () => {
     ];
 
     return (
-        <section id="faq" className="py-20 lg:py-32 bg-[#030712] relative">
+        <section id="faq" className="py-20 lg:py-32 bg-[#020617] relative">
             <div className="container max-w-4xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-white mb-4">Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600">Questions</span></h2>
+                    <h2 className="text-4xl font-bold text-white mb-4 font-heading">Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Questions</span></h2>
                     <p className="text-gray-400 text-lg">Everything you need to know about starting your digital product business.</p>
                 </div>
 

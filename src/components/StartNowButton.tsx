@@ -19,9 +19,9 @@ export const StartNowButton: React.FC<StartNowButtonProps> = ({
     const baseStyles = "group inline-flex items-center justify-center gap-2 px-8 py-4 text-lg rounded-lg font-medium transition-all duration-300 pointer-events-auto cursor-pointer";
 
     const variants = {
-        primary: "bg-gradient-to-r from-pink-500 to-violet-600 text-white shadow-lg shadow-pink-500/25 hover:shadow-pink-500/40 hover:from-pink-600 hover:to-violet-700",
+        primary: "bg-gradient-to-r from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:from-amber-600 hover:to-orange-700",
         secondary: "bg-white/10 text-white border border-white/20 hover:bg-white/20",
-        outline: "border border-pink-500/20 text-pink-400 hover:border-pink-500/40 hover:bg-pink-500/10"
+        outline: "border border-amber-500/20 text-amber-500 hover:border-amber-500/40 hover:bg-amber-500/10"
     };
 
     return (

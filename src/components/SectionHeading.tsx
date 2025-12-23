@@ -21,8 +21,8 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         <div className={`mb-12 ${align === 'center' ? 'text-center' : 'text-left'}`}>
             {badge && (
                 <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-6 ${light
-                        ? 'bg-pink-100 border-pink-200 text-pink-600'
-                        : 'bg-pink-500/10 border-pink-500/20 text-pink-400'
+                    ? 'bg-amber-100 border-amber-200 text-amber-700'
+                    : 'bg-amber-500/10 border-amber-500/20 text-amber-500'
                     }`}>
                     {badge}
                 </div>
@@ -31,7 +31,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
             <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight ${light ? 'text-gray-900' : 'text-white'}`}>
                 {title}
                 {highlight && (
-                    <span className="block mt-2 bg-gradient-to-r from-pink-500 to-violet-600 text-transparent bg-clip-text">
+                    <span className="block mt-2 bg-gradient-to-r from-amber-400 to-orange-500 text-transparent bg-clip-text">
                         {highlight}
                     </span>
                 )}

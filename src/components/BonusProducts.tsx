@@ -5,105 +5,82 @@ import { ProductCard } from './ProductCard';
 export const BonusProducts: React.FC = () => {
     const bonuses = [
         {
-            title: "Sales Funnel Templates",
-            description: "High-converting sales pages, upsell flows, and checkout pages. Just plug and play.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1f504ae1348a10467.jpeg",
+            title: "Top 300 AI Tools",
+            description: "The ultimate collection of AI tools to automate your business and 10x your productivity.",
+            image: "/bonus_ai_tools.png",
             salePrice: "Free Bonus",
-            price: "$997",
+            price: "$197",
             badge: "Bonus #1"
         },
         {
-            title: "Email Marketing Sequences",
-            description: "Pre-written email campaigns for welcome series, abandoned cart, and product launches.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a139379aa8a101867c.jpeg",
+            title: "Marketing Ideas Pack",
+            description: "Never run out of marketing strategies again. Creative ideas to skyrocket your reach.",
+            image: "/bonus_marketing_ideas.png",
             salePrice: "Free Bonus",
-            price: "$497",
+            price: "$97",
             badge: "Bonus #2"
         },
         {
-            title: "Social Media Toolkit",
-            description: "Content calendars, hashtag strategies, and engagement scripts for all platforms.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a19044f77431b21a60.jpeg",
+            title: "Business Plan Pack",
+            description: "Professional business plan templates to map out your road to specific financial goals.",
+            image: "/bonus_business_plan.png",
             salePrice: "Free Bonus",
             price: "$297",
             badge: "Bonus #3"
         },
         {
-            title: "Ads Templates",
-            description: "Tested ad copy and creative templates for Facebook, Instagram, and Google Ads.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1019de023ba66bae5.jpeg",
+            title: "Make Money Online Pack",
+            description: "Proven strategies and blueprints for generating multiple streams of passive income online.",
+            image: "/bonus_make_money_online.png",
             salePrice: "Free Bonus",
             price: "$497",
             badge: "Bonus #4"
         },
         {
-            title: "Launch Checklist",
-            description: "Step-by-step roadmap to launching your digital product business in 30 days.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a19044f77431b21a60.jpeg",
+            title: "750+ Traffic Boosting Ideas",
+            description: "A massive vault of traffic generation secrets to flood your website with eager buyers.",
+            image: "/bonus_traffic_boosting.png",
             salePrice: "Free Bonus",
             price: "$197",
             badge: "Bonus #5"
         },
         {
-            title: "Branding Guide",
-            description: "How to build a memorable brand identity that attracts premium customers.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1019de023ba66bae5.jpeg",
+            title: "100 Awesome Sales Ideas",
+            description: "Innovative sales tactics to close more deals and increase your conversion rates instantly.",
+            image: "/bonus_sales_ideas.png",
             salePrice: "Free Bonus",
-            price: "$197",
+            price: "$147",
             badge: "Bonus #6"
         },
         {
-            title: "Reseller Agreements",
-            description: "Legal templates to protect your business and define rights for your customers.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a139379aa8a101867c.jpeg",
+            title: "1,000 Sales Copy Swipes",
+            description: "High-converting copy templates for emails, ads, and sales pages. Fill-in-the-blank simple.",
+            image: "/bonus_sales_copy_swipes.png",
             salePrice: "Free Bonus",
-            price: "$297",
+            price: "$397",
             badge: "Bonus #7"
         },
         {
-            title: "Copywriting Guide",
-            description: "Psychological triggers and formulas to write words that sell.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1f504ae1348a10467.jpeg",
+            title: "Email Templates Pack",
+            description: "Professionally written email sequences that build trust and sell your products on autopilot.",
+            image: "/bonus_email_templates.png",
             salePrice: "Free Bonus",
-            price: "$297",
+            price: "$197",
             badge: "Bonus #8"
         },
         {
-            title: "Pricing Strategy",
-            description: "How to price your products for maximum profit while keeping customers happy.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a19044f77431b21a60.jpeg",
+            title: "Coloring Books & Pages",
+            description: "A huge library of beautiful coloring pages. Perfect for entering the booming low-content book market.",
+            image: "/bonus_coloring_books.png",
             salePrice: "Free Bonus",
-            price: "$147",
+            price: "$97",
             badge: "Bonus #9"
         },
-        {
-            title: "SEO Guide",
-            description: "Drive free organic traffic to your store with search engine optimization secrets.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1019de023ba66bae5.jpeg",
-            salePrice: "Free Bonus",
-            price: "$197",
-            badge: "Bonus #10"
-        },
-        {
-            title: "Upsell Playbook",
-            description: "Strategies to increase your average order value with upsells and cross-sells.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a139379aa8a101867c.jpeg",
-            salePrice: "Free Bonus",
-            price: "$297",
-            badge: "Bonus #11"
-        },
-        {
-            title: "Affiliate Starter Kit",
-            description: "How to recruit and manage affiliates to promote your products for you.",
-            image: "https://storage.googleapis.com/msgsndr/0iO3mS8O2ALa5vmXwP3d/media/67ef50a1f504ae1348a10467.jpeg",
-            salePrice: "Free Bonus",
-            price: "$297",
-            badge: "Bonus #12"
-        }
+
     ];
 
     return (
-        <section className="py-20 bg-gradient-to-b from-[#030712] to-[#0f172a] relative border-t border-white/5">
+        <section className="py-20 bg-[#0f172a] relative border-t border-white/5">
             <div className="container mx-auto px-4 sm:px-6">
                 <SectionHeading
                     badge="Limited Time Offer"
