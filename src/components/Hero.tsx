@@ -23,13 +23,6 @@ export const Hero: React.FC = () => {
                     <div className="text-center lg:text-left">
                         {/* Social Proof Badge */}
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/20 border border-blue-500/20 text-sm text-blue-200 mb-8 animate-in fade-in slide-in-from-bottom-5 duration-700 mx-auto lg:mx-0">
-                            <div className="flex -space-x-2">
-                                {[1, 2, 3].map((i) => (
-                                    <div key={i} className="w-5 h-5 rounded-full bg-gray-700 border border-[#020617] flex items-center justify-center text-[10px] overflow-hidden">
-                                        <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" className="w-full h-full object-cover" />
-                                    </div>
-                                ))}
-                            </div>
                             <div className="flex items-center gap-1">
                                 <span className="text-amber-400">★★★★★</span>
                                 <span className="font-medium text-gray-300">Trusted by 50,000+ creators</span>
@@ -40,7 +33,7 @@ export const Hero: React.FC = () => {
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200 font-heading">
                             Start Your Digital Business with
                             <span className="block mt-2 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 text-transparent bg-clip-text animate-gradient pb-2">
-                                185 Million+ Assets
+                                200 Million Digital Products
                             </span>
                         </h1>
 
@@ -52,8 +45,8 @@ export const Hero: React.FC = () => {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
-                            <StartNowButton text="Get Instant Access" className="w-full sm:w-auto" />
-                            <StartNowButton text="View The Vault" variant="secondary" className="w-full sm:w-auto bg-[#0f172a] border-gray-800 hover:border-amber-500/50 hover:bg-[#1e293b]" icon={false} />
+                            <StartNowButton text="Get Instant Access" className="w-full sm:w-auto" href="#pricing" />
+
                         </div>
 
                         {/* Feature Pills */}
@@ -79,9 +72,13 @@ export const Hero: React.FC = () => {
                             <div className="relative w-full max-w-lg">
                                 <div className="absolute inset-0 bg-blue-500/10 blur-[100px] rounded-full" />
                                 <img
-                                    src="/hero_vault.png"
+                                    src="/hero_vault.webp"
                                     alt="Premium Digital Asset Vault"
                                     className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 object-contain rounded-2xl border border-amber-500/20 shadow-[0_0_50px_rgba(245,158,11,0.2)]"
+                                    width={600}
+                                    height={600}
+                                    // @ts-ignore
+                                    fetchPriority="high"
                                 />
 
                                 {/* Floating Badges */}
@@ -92,7 +89,7 @@ export const Hero: React.FC = () => {
                                         </div>
                                         <div>
                                             <p className="text-[10px] text-amber-500 font-bold tracking-wider uppercase">PREMIUM VAULT</p>
-                                            <p className="text-white font-bold text-sm">185 Million+ Assets</p>
+                                            <p className="text-white font-bold text-sm">200 Million Digital Products</p>
                                         </div>
                                     </div>
                                 </div>

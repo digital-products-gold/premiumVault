@@ -2,9 +2,27 @@ import React, { useState } from 'react';
 import { SectionHeading } from './SectionHeading';
 import { Check } from 'lucide-react';
 import { StartNowButton } from './StartNowButton';
+import { GuaranteeBadge } from './GuaranteeBadge';
 
 export const PricingSection: React.FC = () => {
-    const [annual, setAnnual] = useState(true);
+    const [loading, setLoading] = useState(false);
+
+    const handleCheckout = async () => {
+        setLoading(true);
+        try {
+            const response = await fetch('https://digitalstoregames.pythonanywhere.com/createStripeLink?sid=50');
+            const data = await response.json();
+            if (data.checkout_url) {
+                window.open(data.checkout_url, '_blank');
+            } else {
+                console.error("No checkout URL found");
+            }
+        } catch (error) {
+            console.error("Error creating checkout link:", error);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <section id="pricing" className="py-20 lg:py-32 bg-[#020617] relative">
@@ -12,95 +30,85 @@ export const PricingSection: React.FC = () => {
                 <SectionHeading
                     title="Start Your Digital Business"
                     highlight="With Confidence"
-                    subtitle="Choose the plan that fits your goals. No hidden fees, cancel anytime."
+                    subtitle="One huge library. One tiny price. No hidden fees."
                 />
 
                 <div className="mb-16"></div>
 
-                <div className="grid md:grid-cols-2 max-w-4xl gap-8 mx-auto mt-12">
-                    {/* Annual Plan */}
-                    <div className="relative rounded-2xl border bg-white border-gray-200 p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300">
-                        <div className="mb-8">
-                            <h3 className="text-2xl font-bold text-gray-900 font-heading">Annual</h3>
-                            <p className="mt-2 text-sm text-gray-500 min-h-[3rem]">Simple Pricing. All Product Access</p>
-                            <div className="mt-6">
-                                <div className="flex items-baseline">
-                                    <span className="text-4xl font-bold text-gray-900 font-heading">$7</span>
-                                    <span className="ml-2 text-gray-500">/month</span>
+                <div className="max-w-xl mx-auto mt-12">
+                    {/* Single Lifetime Plan */}
+                    <div className="relative rounded-2xl border bg-[#0f172a] border-amber-500/50 shadow-2xl shadow-amber-500/10 p-8 sm:p-10 transform hover:scale-[1.02] transition-transform duration-300 z-10">
+                        <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-600 to-rose-600 text-white px-6 py-2 rounded-full text-base font-bold shadow-lg tracking-wide uppercase whitespace-nowrap animate-pulse">
+                            🔥 Special Promotion • 87% OFF
+                        </div>
+
+                        <div className="mb-10 text-center">
+                            <h3 className="text-3xl font-bold text-white font-heading mb-4">Lifetime Access</h3>
+                            <p className="text-gray-400">Pay once, profit forever. <span className="text-amber-400 font-bold">No recurring fees.</span></p>
+
+                            <div className="mt-8 flex flex-col items-center justify-center">
+                                <div className="text-gray-500 text-xl font-medium line-through mb-1">Was $150</div>
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-7xl font-bold text-white font-heading tracking-tight">$19</span>
+                                    <span className="text-gray-400 font-medium">one-time</span>
                                 </div>
-                                <div className="mt-1">
-                                    <span className="text-sm text-gray-500">Per month billed yearly</span>
+                                <div className="mt-3 bg-amber-500/10 border border-amber-500/20 rounded-lg px-4 py-1.5">
+                                    <span className="text-amber-500 text-sm font-bold">⚠️ Limited Time Offer</span>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="mt-6 flex justify-start">
-                                <div className="flex items-center gap-3">
-                                    <button onClick={() => setAnnual(true)} className={`relative w-14 h-8 rounded-full transition-colors duration-300 ${annual ? 'bg-green-500' : 'bg-gray-300'}`}>
-                                        <div className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 ${annual ? 'translate-x-7' : 'translate-x-1'}`} />
-                                    </button>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-sm font-medium text-gray-700">Billed Yearly</span>
-                                        <span className="text-xs bg-green-500 text-white px-2 py-1 rounded-full font-bold">Save 50%</span>
+                        <div className="space-y-4 mb-10">
+                            {/* Feature Grid */}
+                            <div className="grid sm:grid-cols-2 gap-4">
+                                {["PLR + MRR License", "LifeTime Access", "200 Million Digital Products and Assets", "White-Label Rights", "Unlimited Downloads", "Priority Support"].map((f, i) => (
+                                    <div key={i} className="flex items-start gap-3">
+                                        <div className="bg-green-500/20 rounded-full p-1 mt-0.5">
+                                            <Check className="w-3 h-3 flex-shrink-0 text-green-500" />
+                                        </div>
+                                        <span className="text-gray-200 text-sm font-medium">{f}</span>
                                     </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
 
-                        <ul className="mt-8 space-y-4 min-h-[16rem]">
-                            {["PLR + MRR License", "Access to 1M+ PLR Products", "Commercial Usage Rights", "Unlimited Downloads", "Regular Updates", "Ready-to-Sell Templates"].map((f, i) => (
-                                <li key={i} className="flex items-start gap-3">
-                                    <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-emerald-500" />
-                                    <span className="text-gray-600">{f}</span>
-                                </li>
-                            ))}
-                        </ul>
-
-                        <StartNowButton text="Get Instant Access" className="w-full justify-center mt-8 bg-[#0f172a] hover:bg-[#1e293b] text-white shadow-lg" />
-                    </div>
-
-                    {/* Lifetime Plan */}
-                    <div className="relative rounded-2xl border bg-[#0f172a] border-amber-500/50 shadow-2xl shadow-amber-500/10 p-6 sm:p-8 scale-105 z-10">
-                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg tracking-wide uppercase">
-                            Best Value • 50% Off
-                        </div>
-                        <div className="mb-8">
-                            <h3 className="text-2xl font-bold text-white font-heading">Lifetime</h3>
-                            <p className="mt-2 text-sm text-gray-400 min-h-[3rem]">Pay once, own it forever. <span className="text-amber-400 font-bold">No recurring fees.</span></p>
-                            <div className="mt-6">
-                                <div className="flex items-baseline">
-                                    <span className="text-5xl font-bold text-white font-heading">$47</span>
-                                    <span className="ml-2 text-gray-400">one-time</span>
-                                </div>
-                            </div>
-                            {/* Spacer to align with toggle in first column */}
-                            <div className="mt-6 h-[64px] hidden md:flex items-center">
-                                <div className="text-amber-400 text-xs font-bold uppercase tracking-wider border border-amber-500/20 px-3 py-1 rounded bg-amber-500/10">
-                                    Limited Time Offer
-                                </div>
+                        {/* Guarantee Badge - NEW SVG VERSION */}
+                        <div className="flex items-center gap-4 bg-slate-900/50 border border-amber-500/20 rounded-xl p-4 mb-8 group hover:border-amber-500/40 transition-colors">
+                            <GuaranteeBadge className="w-20 h-20 flex-shrink-0 drop-shadow-lg" />
+                            <div>
+                                <h4 className="text-amber-400 font-bold text-sm uppercase tracking-wide">30-Day Money Back Guarantee</h4>
+                                <p className="text-gray-400 text-xs mt-1 leading-relaxed">
+                                    If you're not 100% satisfied with the quality of these assets, we'll refund your $19. No questions asked.
+                                </p>
                             </div>
                         </div>
 
-                        <ul className="mt-8 space-y-4 min-h-[16rem]">
-                            {["PLR + MRR License", "Lifetime Updates Access", "White-Label Rights", "All Future Updates", "Premium Marketing Kit", "Business Analytics Tools"].map((f, i) => (
-                                <li key={i} className="flex items-start gap-3">
-                                    <div className="bg-amber-500/20 rounded-full p-0.5">
-                                        <Check className="w-4 h-4 flex-shrink-0 text-amber-500" />
-                                    </div>
-                                    <span className="text-gray-200">{f}</span>
-                                </li>
-                            ))}
-                        </ul>
+                        <StartNowButton
+                            text={loading ? "Processing..." : "Claim Deal for $19"}
+                            className="w-full justify-center py-4 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white shadow-lg shadow-amber-500/25 font-bold text-xl rounded-xl"
+                            onClick={handleCheckout}
+                            disabled={loading}
+                        />
 
-                        <StartNowButton text="Get Lifetime Access" className="w-full justify-center mt-8 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white shadow-lg shadow-amber-500/25 font-bold text-lg" />
+                        <p className="text-center text-xs text-gray-500 mt-4">
+                            30-Day Money-Back Guarantee. Secure Checkout.
+                        </p>
                     </div>
                 </div>
 
                 <div className="mt-12 sm:mt-16 text-center">
-                    <div className="flex justify-center items-center text-sm text-gray-500">
-                        <div className="flex items-center divide-x divide-gray-800">
-                            <div className="flex items-center gap-2 px-8"><span>Instant Access</span></div>
-                            <div className="flex items-center gap-2 px-8"><span>Lifetime Updates</span></div>
-                            <div className="flex items-center gap-2 px-8"><span>Premium Support</span></div>
+                    <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">
+                        <div className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                            <span>Instant Access</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                            <span>Lifetime Updates</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                            <span>Secure SSL Payment</span>
                         </div>
                     </div>
                 </div>

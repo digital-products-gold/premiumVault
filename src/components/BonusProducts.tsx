@@ -5,78 +5,53 @@ import { ProductCard } from './ProductCard';
 export const BonusProducts: React.FC = () => {
     const bonuses = [
         {
-            title: "Top 300 AI Tools",
-            description: "The ultimate collection of AI tools to automate your business and 10x your productivity.",
-            image: "/bonus_ai_tools.png",
+            title: "Premium Supplier List",
+            description: "Direct access to our vetted list of premium suppliers for your digital business needs.",
+            image: "/bonus_sales_ideas.webp",
             salePrice: "Free Bonus",
             price: "$197",
             badge: "Bonus #1"
         },
         {
-            title: "Marketing Ideas Pack",
-            description: "Never run out of marketing strategies again. Creative ideas to skyrocket your reach.",
-            image: "/bonus_marketing_ideas.png",
+            title: "1000 Digital Product Ideas",
+            description: "Never run out of inspiration with this massive list of profitable digital product ideas.",
+            image: "/bonus_marketing_ideas.webp",
             salePrice: "Free Bonus",
             price: "$97",
             badge: "Bonus #2"
         },
         {
-            title: "Business Plan Pack",
-            description: "Professional business plan templates to map out your road to specific financial goals.",
-            image: "/bonus_business_plan.png",
+            title: "Money Mindset Journal",
+            description: "Rewire your brain for success and abundance with this powerful guided journal.",
+            image: "/p_digital_journals_cozy_1766245159922.webp",
             salePrice: "Free Bonus",
-            price: "$297",
+            price: "$67",
             badge: "Bonus #3"
         },
         {
-            title: "Make Money Online Pack",
-            description: "Proven strategies and blueprints for generating multiple streams of passive income online.",
-            image: "/bonus_make_money_online.png",
+            title: "Digital Product Planner",
+            description: "Map out your entire digital product creation process from concept to launch.",
+            image: "/bonus_business_plan.webp",
             salePrice: "Free Bonus",
-            price: "$497",
+            price: "$127",
             badge: "Bonus #4"
         },
         {
-            title: "750+ Traffic Boosting Ideas",
-            description: "A massive vault of traffic generation secrets to flood your website with eager buyers.",
-            image: "/bonus_traffic_boosting.png",
+            title: "Online Shop Planner",
+            description: "Organize every aspect of your online store for maximum efficiency and profit.",
+            image: "/bonus_traffic_boosting.webp",
             salePrice: "Free Bonus",
-            price: "$197",
+            price: "$147",
             badge: "Bonus #5"
         },
         {
-            title: "100 Awesome Sales Ideas",
-            description: "Innovative sales tactics to close more deals and increase your conversion rates instantly.",
-            image: "/bonus_sales_ideas.png",
+            title: "Fitness & Weight Loss Tracker",
+            description: "Track your health journey alongside your business growth with this comprehensive tracker.",
+            image: "/p_digital_trackers_future_1766246049120.webp",
             salePrice: "Free Bonus",
-            price: "$147",
+            price: "$47",
             badge: "Bonus #6"
         },
-        {
-            title: "1,000 Sales Copy Swipes",
-            description: "High-converting copy templates for emails, ads, and sales pages. Fill-in-the-blank simple.",
-            image: "/bonus_sales_copy_swipes.png",
-            salePrice: "Free Bonus",
-            price: "$397",
-            badge: "Bonus #7"
-        },
-        {
-            title: "Email Templates Pack",
-            description: "Professionally written email sequences that build trust and sell your products on autopilot.",
-            image: "/bonus_email_templates.png",
-            salePrice: "Free Bonus",
-            price: "$197",
-            badge: "Bonus #8"
-        },
-        {
-            title: "Coloring Books & Pages",
-            description: "A huge library of beautiful coloring pages. Perfect for entering the booming low-content book market.",
-            image: "/bonus_coloring_books.png",
-            salePrice: "Free Bonus",
-            price: "$97",
-            badge: "Bonus #9"
-        },
-
     ];
 
     return (
@@ -91,7 +66,7 @@ export const BonusProducts: React.FC = () => {
 
                 <div className="grid md:grid-cols-3 gap-8 mb-12">
                     {bonuses.map((bonus, i) => (
-                        <ProductCard key={i} {...bonus} />
+                        <ProductCard key={i} {...bonus} showAction={false} />
                     ))}
                 </div>
             </div>

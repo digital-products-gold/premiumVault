@@ -33,12 +33,12 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer }) => {
 
 export const FAQ: React.FC = () => {
     const faqs = [
-        { q: "What's included in the template package?", a: "You get instant access to our entire library of over 1 million digital products, including Notion templates, Canva designs, ebooks, courses, and more. Everything includes PLR rights." },
-        { q: "Do I need technical skills to sell these templates?", a: "Not at all. Most of our templates are compatible with user-friendly platforms like Canva and Notion. We provide guides on how to edit and list them." },
-        { q: "How much can I sell each template for?", a: "You have complete pricing freedom. Most of our members sell individual templates for $20-$50, and bundles for $97+. You keep 100% of the profit." },
+        { q: "What's included in the template package?", a: "You get instant access to our entire library of over 200 millions digital products, including Notion templates, Canva designs, ebooks, courses, and much more. Everything includes PLR/MMR rights." },
+        { q: "Do I need technical skills to sell these products?", a: "Not at all. Most of our products are compatible with user-friendly platforms. We provide guides on how to edit and list them." },
+        { q: "How much can I sell each product for?", a: "You have complete pricing freedom. Most of our members sell individual products for $20-$50, and bundles for $97+. You keep 100% of the profit." },
         { q: "Are there any recurring fees or royalties?", a: "No. You pay a one-time fee for lifestyle access (or the annual plan). There are no royalties, hidden fees, or profit splitting. What you make is yours." },
-        { q: "How do I deliver the templates to customers?", a: "You can host the files on Gumroad, Etsy, Google Drive, or your own website. We show you the best ways to automate delivery." },
-        { q: "Can I modify and rebrand the templates?", a: "Yes! That's the beauty of PLR (Private Label Rights). You can change colors, add your logo, edit the content, and claim full authorship." }
+        { q: "How do I deliver the products to customers?", a: "You can host the files on Gumroad, Etsy, Google Drive, or your own website. We show you the best ways to automate delivery." },
+        { q: "Can I modify and rebrand the products?", a: "Yes! That's the beauty of PLR/MMR (Private Label Rights). You can change colors, add your logo, edit the content, and claim full authorship." }
     ];
 
     return (

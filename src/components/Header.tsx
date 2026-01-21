@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { StartNowButton } from './StartNowButton';
+
 
 export const Header: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
                         <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-500/20 font-heading">
                             P
                         </div>
-                        <span className="text-xl font-bold text-white tracking-tight font-heading">PLRMRR</span>
+                        <span className="text-xl font-bold text-white tracking-tight font-heading">Premium Vault</span>
                     </div>
 
                     {/* Desktop Nav */}
@@ -40,13 +40,7 @@ export const Header: React.FC = () => {
                         ))}
                     </nav>
 
-                    {/* Desktop Actions */}
-                    <div className="hidden md:flex items-center gap-4">
-                        <button className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-                            Login
-                        </button>
-                        <StartNowButton text="Get All Templates" className="!px-6 !py-2.5 !text-sm" />
-                    </div>
+
 
                     {/* Mobile Menu Button */}
                     <button
@@ -73,10 +67,7 @@ export const Header: React.FC = () => {
                             </a>
                         ))}
                         <div className="h-px bg-white/10 my-2" />
-                        <button className="text-left text-base font-medium text-gray-300 hover:text-white py-2">
-                            Login
-                        </button>
-                        <StartNowButton text="Get All Templates" className="w-full" />
+
                     </div>
                 </div>
             )}

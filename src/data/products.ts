@@ -1,122 +1,137 @@
 export const products = [
     {
-        title: "Graphic Design Bundle",
-        description: "Huge collection of vector assets, fonts, and design elements for professional creatives.",
-        image: "/p_graphic_design_1766197006044.png"
+        title: "1100+ Animated Gym Exercise",
+        description: "High-quality animated gym exercises for fitness apps, personal trainers, and workout guides. Ready to use animations covering all muscle groups.",
+        image: "/images/products/Gemini_Generated_Image_6zpoy66zpoy66zpo.png"
     },
     {
-        title: "100,000 ChatGPT Bundle",
-        description: "Massive library of prompts to master AI for copywriting, coding, and business.",
-        image: "/p_chatgpt_bundle_1766197022690.png"
+        title: "14,000 N8N Workflows",
+        description: "Automate your business marketing and operations with thousands of ready-to-use N8N automation workflows.",
+        image: "/images/products/14000N8N.png"
     },
     {
-        title: "2500 Midjourney Prompts",
-        description: "High-quality art prompts to generate stunning visuals with AI effortlessly.",
-        image: "/p_midjourney_prompts_1766197041984.png"
+        title: "500 Nano Banana Prompts",
+        description: "Highly specialized AI prompts for creative writing, marketing copy, and content generation.",
+        image: "/images/products/500nanobananaprompts.png"
     },
     {
-        title: "Faceless Reels",
-        description: "Viral aesthetic video clips for creating anonymous social media content.",
-        image: "/p_faceless_reels_1766201844564.png"
+        title: "4,000 Viral Videos Bundle",
+        description: "Short-form viral content ready for TikTok, Reels, and YouTube Shorts. Explode your reach.",
+        image: "/images/products/4000viralbundle.png"
     },
     {
-        title: "Social Media Templates",
-        description: "Ready-to-post templates for Instagram, TikTok, and Facebook engagement.",
-        image: "/p_social_media_1766201858848.png"
+        title: "Premium Anime Bundle",
+        description: "Tap into the explosive Anime market! High-definition, exclusive artwork specifically crafted for sublimation. Create viral T-shirts, hoodies, mugs, and posters that fans are desperate to buy. Your key to a profitable niche store.",
+        image: "/images/products/PremiumAnimeBundle.png"
     },
     {
-        title: "Fitness Videos",
-        description: "High-quality workout and wellness footage for health niches.",
-        image: "/p_fitness_videos_1766201873323.png"
+        title: "Automotive Poster Collection",
+        description: "Stunning high-definition printable car posters and wall art. Perfect for print-on-demand.",
+        image: "/images/products/carposters.png"
     },
     {
-        title: "T-Shirt Designs",
-        description: "Trendy vector graphics ready for print-on-demand merchandise.",
-        image: "/p_tshirt_designs_1766203724097.png"
+        title: "Ultimate Coloring Collection",
+        description: "Thousands of coloring pages for adults and kids. A huge market on Amazon KDP and Etsy.",
+        image: "/images/products/coloringcollection.png"
     },
     {
-        title: "300,000 Ebooks Bundle",
-        description: "A massive library of PLR books across every niche imaginable.",
-        image: "/p_ebooks_bundle_v2_1766243046608.png"
+        title: "Excel Template Vault",
+        description: "Professional spreadsheets for finance, project management, and business tracking.",
+        image: "/images/products/exceltemplate.avif"
     },
     {
-        title: "1000+ Website Themes",
-        description: "Professional WordPress and HTML themes for varied industries.",
-        image: "/p_website_themes_prof_1766203739195.png"
+        title: "2 TB ANIME STL MEGA COLLECTION",
+        description: "A huge collection of high-quality STL files ready to print. Create stunning Anime figures, statues, and collectibles. The ultimate library for 3D printing enthusiasts and businesses.",
+        image: "/images/products/il_1588xN.7545805755_lzsm.webp"
     },
     {
-        title: "Website Themes",
-        description: "Additional collection of modern, responsive website templates.",
-        image: "/p_website_themes_modern_1766203899184.png"
+        title: "700 GB Udemy Courses",
+        description: "Comprehensive video courses covering marketing, coding, business, and self-improvement.",
+        image: "/images/products/700gbUdemy.png"
     },
     {
-        title: "20,000 Sound Track & Music",
-        description: "Royalty-free audio tracks and sound effects for video production.",
-        image: "/p_sound_tracks_1766203912816.png"
+        title: "30,500 Education Resources",
+        description: "A giant library of educational materials, worksheets, and learning guides for teachers and parents.",
+        image: "/images/products/30500_education_resources.png"
     },
     {
-        title: "LOGO Designs",
-        description: "Diverse collection of editable logo templates for branding projects.",
-        image: "/p_logo_designs_1766203926314.png"
+        title: "600 AI Prompts",
+        description: "High-quality prompts designed to unlock the full potential of advanced AI models.",
+        image: "/images/products/600kaiprompt.png"
     },
     {
-        title: "Self Help Course Bundle",
-        description: "Empowering personal development courses to resell or learn from.",
-        image: "/p_self_help_course_1766204009876.png"
+        title: "41 in 1 Pokemon Crochet Bundle",
+        description: "41 template models of Pokemon to crochet. Create adorable plushies with this comprehensive pattern collection.",
+        image: "/images/products/41inonepokemoncrouchet.webp"
     },
     {
-        title: "2500 Lightroom Presets",
-        description: "Professional photo filters to enhance images in one click.",
-        image: "/p_lightroom_presets_1766204024897.png"
+        title: "Papercraft",
+        description: "Create your Minecraft World with paper. Paper models ready to craft your own Minecraft.",
+        image: "/images/products/il_1588xN.6742968798_fifq.avif"
     },
     {
-        title: "EXCEL Bundle",
-        description: "Advanced spreadsheet templates for finance, project management, and data.",
-        image: "/p_excel_bundle_1766204040046.png"
+        title: "500 Craft & DIY Resources",
+        description: "Patterns, guides, and templates for the crafting and DIY niche.",
+        image: "/images/products/500craft.png"
     },
     {
-        title: "Recipes Ideas",
-        description: "Delicious culinary guides and recipe collections for food blogs.",
-        image: "/p_recipes_ideas_1766204751708.png"
+        title: "50000 Mega Bundle Cartoon Characters",
+        description: "All Cartoon Characters PNG, DXF, SVG, EPS Files. The ultimate design resource for merchandise, print, and digital art.",
+        image: "/images/products/il_1588xN.7413444223_cyga.webp"
     },
     {
-        title: "1,200,000 PLR Templates",
-        description: "The ultimate resource of varied templates for every use case.",
-        image: "/p_plr_templates_vault_1766244463867.png"
+        title: "T-SHIRT 3000000 DESIGN BUNDLE",
+        description: "The ultimate T-Shirt design collection. Over 3 Million assets for print-on-demand, sublimation, and merchandising. Create viral apparel instantly.",
+        image: "/images/products/tshirtbundle.webp"
     },
     {
-        title: "5,000+ Adobe Photoshop Assets",
-        description: "Brushes, patterns, and styles to supercharge your design workflow.",
-        image: "/p_photoshop_assets_pro_1766244844799.png"
+        title: "20000+ Lightroom Presets",
+        description: "Transform your photos instantly! Professional presets for influencers, photographers, and content creators. One-click edits for stunning, consistent aesthetics.",
+        image: "/images/products/Gemini_Generated_Image_bmmokqbmmokqbmmo.png"
     },
     {
-        title: "5,000+ Adobe Premiere Assets",
-        description: "Transitions, effects, and LUTs for professional video editing.",
-        image: "/p_premiere_assets_cine_1766249182111.png"
+        title: "10000+ Editable Premium Canva Templates",
+        description: "Save time and look professional. High-converting templates for social media, business, and marketing. Fully editable in Canva free or pro.",
+        image: "/images/products/Gemini_Generated_Image_p5dwllp5dwllp5dw.png"
     },
     {
-        title: "650,000+ SVG Mega-Bundle",
-        description: "Scalable vector graphics including icons, shapes, and illustrations.",
-        image: "/p_svg_bundle_abstract_1766247087913.png"
+        title: "40000+ HD Royalty Stock Images",
+        description: "Never pay for stock photos again. A massive vault of high-resolution, royalty-free images for websites, ads, and creative projects.",
+        image: "/images/products/Gemini_Generated_Image_pgauyipgauyipgau.png"
     },
     {
-        title: "Digital Journals",
-        description: "Beautifully designed digital planners and journals for tablets.",
-        image: "/p_digital_journals_cozy_1766245159922.png"
+        title: "5000+ Language Learning Pack",
+        description: "Master new languages quickly. Comprehensive resources including audiobooks, worksheets, and guides for popular languages around the world.",
+        image: "/images/products/Gemini_Generated_Image_q1hzgkq1hzgkq1hz.png"
     },
     {
-        title: "Digital Trackers",
-        description: "Habit, finance, and goal trackers to organize productivity.",
-        image: "/p_digital_trackers_future_1766246049120.png"
+        title: "9 Million+ PLR Articles",
+        description: "An endless content supply! High-quality PLR articles for blogs, websites, and SEO. Covers every niche imaginable to drive traffic and authority.",
+        image: "/images/products/Gemini_Generated_Image_q71wiqq71wiqq71w.png"
     },
     {
-        title: "Canva Social Media Templates",
-        description: "Editable Canva designs for quick and consistent social branding.",
-        image: "/p_canva_social_viral_1766246066317.png"
+        title: "Youtube Growth Bundle",
+        description: "Explode your channel growth! Thumbnails, end screens, sound effects, and strategies used by top YouTubers to gain subscribers and watch time.",
+        image: "/images/products/Gemini_Generated_Image_qend0tqend0tqend.png"
     },
     {
-        title: "Mock Ups",
-        description: "High-resolution mockups to showcase logos and products realistically.",
-        image: "/p_mockups_agency_1766249220044.png"
+        title: "1000000+ Laser-cut Design",
+        description: "The ultimate library for laser cutting and engraving businesses. SVG, DXF, and CDR files for wood, acrylic, and metal projects.",
+        image: "/images/products/Gemini_Generated_Image_vbza0wvbza0wvbza.png"
+    },
+    {
+        title: "6000GB+ Graphic Bundles Pack",
+        description: "The biggest graphic design library ever. Vectors, illustrations, fonts, logos, and UI kits. A lifetime supply of assets for any project.",
+        image: "/images/products/Gemini_Generated_Image_xgydbaxgydbaxgyd.png"
+    },
+    {
+        title: "150K+ Premium Reels Bundle",
+        description: "Dominate short-form video! Aesthetic, viral-ready reels for Instagram, TikTok, and Shorts. Engage audiences and grow your following effortlessly.",
+        image: "/images/products/Gemini_Generated_Image_yrp7qwyrp7qwyrp7.png"
+    },
+    {
+        title: "200 Jewelry 3D Models STL Files",
+        description: "Create stunning jewelry with this premium collection of 3D printable designs. Rings, pendants, earrings, and more in high-quality STL format—ready to print and sell.",
+        image: "/images/products/200jewelry3dmodelsstlfiles.avif"
     }
 ];

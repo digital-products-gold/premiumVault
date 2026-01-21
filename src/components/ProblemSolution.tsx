@@ -4,7 +4,7 @@ import { AlertTriangle } from 'lucide-react';
 
 export const ProblemSolution: React.FC = () => {
     return (
-        <section className="relative bg-[#030712] py-20 lg:py-32 overflow-hidden">
+        <section className="relative bg-[#020617] py-20 lg:py-32 overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-gray-900 to-gray-900/50 blur-3xl opacity-50" />
@@ -33,13 +33,13 @@ export const ProblemSolution: React.FC = () => {
                     <div className="max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Card 1: Search - Endless Research */}
-                            <div className="group relative rounded-2xl bg-gray-900/40 border border-white/5 p-8 hover:border-red-500/20 transition-all duration-300">
+                            <div className="group relative rounded-2xl bg-gray-900/60 border border-white/10 p-8 hover:border-red-500/30 transition-all duration-300">
                                 {/* Visual: Failed Search */}
-                                <div className="h-40 flex items-center justify-center mb-6 bg-black/20 rounded-xl border border-white/5 p-4">
+                                <div className="h-40 flex items-center justify-center mb-6 bg-black/40 rounded-xl border border-white/10 p-4">
                                     <div className="w-full max-w-[240px] space-y-3">
-                                        <div className="h-2 w-1/3 bg-gray-700/50 rounded-full"></div>
+                                        <div className="h-2 w-1/3 bg-gray-600 rounded-full"></div>
                                         <div className="flex gap-2">
-                                            <div className="flex-1 h-10 bg-[#0f172a] rounded-lg border border-gray-700 flex items-center px-3 text-sm text-gray-500 font-mono">
+                                            <div className="flex-1 h-10 bg-gray-900 rounded-lg border border-gray-600 flex items-center px-3 text-sm text-gray-300 font-mono">
                                                 Profitable Niche...
                                             </div>
                                             <div className="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center border border-blue-600/30">
@@ -61,15 +61,15 @@ export const ProblemSolution: React.FC = () => {
                             </div>
 
                             {/* Card 2: Money - Negative Invoice */}
-                            <div className="group relative rounded-2xl bg-gray-900/40 border border-white/5 p-8 hover:border-orange-500/20 transition-all duration-300">
+                            <div className="group relative rounded-2xl bg-gray-900/60 border border-white/10 p-8 hover:border-orange-500/30 transition-all duration-300">
                                 {/* Visual: Invoice */}
-                                <div className="h-40 flex items-center justify-center mb-6 bg-black/20 rounded-xl border border-white/5 p-4 relative overflow-hidden">
-                                    <div className="w-[200px] bg-[#0f172a] rounded-lg border border-gray-800 p-4 font-mono text-xs shadow-xl">
-                                        <div className="flex justify-between mb-2 pb-2 border-b border-gray-800 text-gray-400">
+                                <div className="h-40 flex items-center justify-center mb-6 bg-black/40 rounded-xl border border-white/10 p-4 relative overflow-hidden">
+                                    <div className="w-[200px] bg-gray-900 rounded-lg border border-gray-700 p-4 font-mono text-xs shadow-xl">
+                                        <div className="flex justify-between mb-2 pb-2 border-b border-gray-700 text-gray-300">
                                             <span>ITEM</span>
                                             <span>COST</span>
                                         </div>
-                                        <div className="space-y-2 text-gray-300">
+                                        <div className="space-y-2 text-gray-200">
                                             <div className="flex justify-between">
                                                 <span>Freelancer</span>
                                                 <span>-$2,000</span>
@@ -78,11 +78,11 @@ export const ProblemSolution: React.FC = () => {
                                                 <span>Ads Setup</span>
                                                 <span>-$1,500</span>
                                             </div>
-                                            <div className="flex justify-between text-gray-500">
+                                            <div className="flex justify-between text-gray-400">
                                                 <span>Tools</span>
                                                 <span>-$490</span>
                                             </div>
-                                            <div className="flex justify-between pt-2 border-t border-gray-800 font-bold text-red-400 mt-1">
+                                            <div className="flex justify-between pt-2 border-t border-gray-700 font-bold text-red-400 mt-1">
                                                 <span>TOTAL</span>
                                                 <span>-$3,990</span>
                                             </div>
@@ -94,20 +94,20 @@ export const ProblemSolution: React.FC = () => {
                             </div>
 
                             {/* Card 3: Time - Loading Bar */}
-                            <div className="group relative rounded-2xl bg-gray-900/40 border border-white/5 p-8 hover:border-amber-500/20 transition-all duration-300">
+                            <div className="group relative rounded-2xl bg-gray-900/60 border border-white/10 p-8 hover:border-amber-500/30 transition-all duration-300">
                                 {/* Visual: Slow Loading */}
-                                <div className="h-40 flex items-center justify-center mb-6 bg-black/20 rounded-xl border border-white/5 p-4">
+                                <div className="h-40 flex items-center justify-center mb-6 bg-black/40 rounded-xl border border-white/10 p-4">
                                     <div className="w-full max-w-[240px] space-y-4">
-                                        <div className="flex justify-between text-xs font-mono text-gray-400">
+                                        <div className="flex justify-between text-xs font-mono text-gray-300">
                                             <span>Development Status</span>
                                             <span className="text-amber-500">In Progress...</span>
                                         </div>
-                                        <div className="h-3 w-full bg-gray-800 rounded-full overflow-hidden">
+                                        <div className="h-3 w-full bg-gray-700 rounded-full overflow-hidden">
                                             <div className="h-full w-[30%] bg-amber-500/50 rounded-full relative">
                                                 <div className="absolute inset-0 bg-white/20 animate-[shimmer_1s_infinite]"></div>
                                             </div>
                                         </div>
-                                        <div className="flex justify-between text-[10px] text-gray-600 font-mono">
+                                        <div className="flex justify-between text-[10px] text-gray-500 font-mono">
                                             <span>Start: Jan</span>
                                             <span>Est: 6 Months</span>
                                         </div>
@@ -118,16 +118,16 @@ export const ProblemSolution: React.FC = () => {
                             </div>
 
                             {/* Card 4: Competition - The Dot Grid */}
-                            <div className="group relative rounded-2xl bg-gray-900/40 border border-white/5 p-8 hover:border-blue-500/20 transition-all duration-300">
+                            <div className="group relative rounded-2xl bg-gray-900/60 border border-white/10 p-8 hover:border-blue-500/30 transition-all duration-300">
                                 {/* Visual: Lost in Crowd */}
-                                <div className="h-40 flex items-center justify-center mb-6 bg-black/20 rounded-xl border border-white/5 p-4 overflow-hidden relative">
-                                    <div className="grid grid-cols-10 gap-2 opacity-50">
+                                <div className="h-40 flex items-center justify-center mb-6 bg-black/40 rounded-xl border border-white/10 p-4 overflow-hidden relative">
+                                    <div className="grid grid-cols-10 gap-3 opacity-80">
                                         {[...Array(50)].map((_, i) => (
-                                            <div key={i} className={`w-1.5 h-1.5 rounded-full ${i === 24 ? 'bg-blue-500 animate-pulse scale-150' : 'bg-gray-700'}`}></div>
+                                            <div key={i} className={`w-2 h-2 rounded-full ${i === 24 ? 'bg-blue-500 animate-pulse scale-150 shadow-[0_0_10px_rgba(59,130,246,0.6)]' : 'bg-gray-600'}`}></div>
                                         ))}
                                     </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-4">
-                                        <div className="text-xs bg-gray-900/80 border border-white/10 px-2 py-1 rounded text-gray-400 font-mono">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex items-end justify-center pb-4">
+                                        <div className="text-xs bg-gray-900 border border-white/20 px-3 py-1.5 rounded text-white font-mono shadow-lg">
                                             1,000+ Similar Products
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@ export const ProblemSolution: React.FC = () => {
                                 <div className="p-3">
                                     <div className="flex items-center justify-between mb-3">
                                         <span className="text-[8px] text-gray-500">Results Found</span>
-                                        <span className="text-[8px] text-blue-400 font-bold">185,000,000+</span>
+                                        <span className="text-[8px] text-blue-400 font-bold">200,000,000+</span>
                                     </div>
                                     <div className="space-y-2">
                                         {[1, 2].map((i) => (

@@ -7,7 +7,7 @@ import { products } from '../data/products';
 export const ProductShowcase: React.FC = () => {
 
     return (
-        <section id="products" className="py-20 lg:py-32 bg-[#030712] relative">
+        <section id="products" className="py-20 lg:py-32 bg-[#020617] relative">
             <div className="container mx-auto px-4 sm:px-6">
                 <SectionHeading
                     badge="Massive Library"
@@ -23,7 +23,7 @@ export const ProductShowcase: React.FC = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <StartNowButton text="Get Full Access Now" className="w-full sm:w-auto" />
+                    <StartNowButton text="Get Full Access Now" className="w-full sm:w-auto" href="#pricing" />
                 </div>
             </div>
         </section>

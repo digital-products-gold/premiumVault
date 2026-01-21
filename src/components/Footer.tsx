@@ -44,16 +44,10 @@ export const Footer: React.FC = () => {
 
                     <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
                         <div className="flex flex-col sm:flex-row items-center gap-6">
-                            <span className="font-bold text-white text-xl font-heading tracking-tight">PLRMRR</span>
-                            <div className="flex flex-wrap justify-center gap-6 text-gray-500">
-                                <a href="#" className="hover:text-amber-400 transition-colors">Terms</a>
-                                <a href="#" className="hover:text-amber-400 transition-colors">Privacy</a>
-                                <a href="#" className="hover:text-amber-400 transition-colors">Refund Policy</a>
-                                <a href="#" className="hover:text-amber-400 transition-colors">Contact</a>
-                            </div>
+                            <span className="font-bold text-white text-xl font-heading tracking-tight">Premium Vault</span>
                         </div>
                         <div className="text-gray-600">
-                            © 2024 PLRMRR. All rights reserved.
+                            © 2026 Premium Vault. All rights reserved.
                         </div>
                     </div>
 

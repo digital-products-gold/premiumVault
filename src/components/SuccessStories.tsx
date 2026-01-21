@@ -51,25 +51,26 @@ export const SuccessStories: React.FC = () => {
         }
     ];
 
-    const showcaseImages = [
-        "/p_graphic_design_1766197006044.png",
-        "/p_chatgpt_bundle_1766197022690.png",
-        "/p_midjourney_prompts_1766197041984.png",
-        "/p_faceless_reels_1766201844564.png",
-        "/p_social_media_1766201858848.png",
-        "/p_fitness_videos_1766201873323.png",
-        "/p_tshirt_designs_1766203724097.png",
-        "/p_ebooks_bundle_v2_1766243046608.png"
+    const showcaseVideos = [
+        "/images/products/videos/0821_jrdfyv.mp4",
+        "/images/products/videos/aweh3wie2n0x4l3uimau.mp4",
+        "/images/products/videos/anime.mp4",
+        "/images/products/videos/kis-education-bundle.mp4",
+        "/images/products/videos/minecraft.mp4",
+        "/images/products/videos/n8n.mp4",
+        "/images/products/videos/nanobanana.mp4",
+
+        "/images/products/videos/Untitled_design_5_eexpij.mp4",
+        "/images/products/videos/9millionplr.mp4"
     ];
 
     return (
-        <section id="showcase" className="py-20 lg:py-32 bg-[#020617] relative overflow-hidden">
+        <section id="testimonials" className="py-20 lg:py-32 bg-[#020617] relative overflow-hidden">
             {/* Scrolling Showcase */}
             <div className="mb-24">
                 <SectionHeading
                     title="See What's Possible"
-                    highlight="With Our Templates"
-                    subtitle="Real examples of what you can build in minutes."
+                    highlight="Real examples of what you can build."
                 />
 
                 <div className="relative w-full overflow-hidden mt-12 group">
@@ -77,9 +78,17 @@ export const SuccessStories: React.FC = () => {
                     <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#020617] to-transparent z-10"></div>
 
                     <div className="flex gap-8 animate-scroll-left hover:[animation-play-state:paused]" style={{ width: 'max-content' }}>
-                        {[...showcaseImages, ...showcaseImages].map((img, i) => (
-                            <div key={i} className="w-[300px] aspect-[9/16] rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform hover:scale-105 duration-300">
-                                <img src={img} alt="Showcase" className="w-full h-full object-cover" />
+                        {[...showcaseVideos, ...showcaseVideos].map((video, i) => (
+                            <div key={i} className="w-[300px] aspect-square rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform hover:scale-105 duration-300 bg-black/20">
+                                <video
+                                    src={video}
+                                    className="w-full h-full object-contain"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    preload="auto"
+                                />
                             </div>
                         ))}
                     </div>
