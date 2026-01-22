@@ -1,6 +1,7 @@
 import React from 'react';
 import { StartNowButton } from './StartNowButton';
 import { Check, Download, PenTool, DollarSign, Crown } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 export const Hero: React.FC = () => {
     return (
@@ -72,7 +73,7 @@ export const Hero: React.FC = () => {
                             <div className="relative w-full max-w-lg">
                                 <div className="absolute inset-0 bg-blue-500/10 blur-[100px] rounded-full" />
                                 <img
-                                    src="/hero_vault.webp"
+                                    src={getAssetPath("/hero_vault.webp")}
                                     alt="Premium Digital Asset Vault"
                                     className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 object-contain rounded-2xl border border-amber-500/20 shadow-[0_0_50px_rgba(245,158,11,0.2)]"
                                     width={600}
