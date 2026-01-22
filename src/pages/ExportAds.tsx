@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import html2canvas from 'html2canvas';
 import { StoryAdV1 } from '../components/ads/StoryAdV1';
 import { StoryAdV2 } from '../components/ads/StoryAdV2';
@@ -19,9 +19,10 @@ const ads = [
 ];
 
 export default function ExportAds() {
-  const refs = useRef({});
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  const refs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
-  const exportAd = async (ad) => {
+  const exportAd = async (ad: any) => {
     try {
       const element = refs.current[ad.name];
       if (!element) return;

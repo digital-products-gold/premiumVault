@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ad Export</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { margin: 0; padding: 0; background: #000; }
+        #ad-container { width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body>
+    <div id="ad-container"></div>
+    <script type="module">
+        import { StoryAdV1 } from './src/components/ads/StoryAdV1';
+        import { StoryAdV2 } from './src/components/ads/StoryAdV2';
+        import { StoryAdV3 } from './src/components/ads/StoryAdV3';
+        import { TimelineFeedAdV1 } from './src/components/ads/TimelineFeedAdV1';
+        import { TimelineFeedAdV2 } from './src/components/ads/TimelineFeedAdV2';
+        import { ReelsAdV1 } from './src/components/ads/ReelsAdV1';
+        import { ReelsAdV2 } from './src/components/ads/ReelsAdV2';
+        import React from 'react';
+        import { createRoot } from 'react-dom/client';
+
+        const ads = {
+            StoryAdV1,
+            StoryAdV2,
+            StoryAdV3,
+            TimelineFeedAdV1,
+            TimelineFeedAdV2,
+            ReelsAdV1,
+            ReelsAdV2
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const adName = urlParams.get('ad');
+        const AdComponent = ads[adName];
+
+        if (AdComponent) {
+            const container = document.getElementById('ad-container');
+            const root = createRoot(container);
+            root.render(React.createElement(AdComponent));
+        } else {
+            document.getElementById('ad-container').innerHTML = '<p style="color: white;">Ad not found</p>';
+        }
+    </script>
+</body>
+</html>
