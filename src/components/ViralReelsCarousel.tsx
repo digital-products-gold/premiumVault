@@ -1,5 +1,6 @@
 import React from 'react';
 import { getAssetPath } from '../utils/assets';
+import { useVideoLazyLoad } from '../hooks/useVideoLazyLoad';
 
 const reels = [
     { src: getAssetPath("/images/products/reels/2000_Luxury_Hotel_Reels_MP4_zk8hbm.mp4"), thumb: getAssetPath("/images/products/reels/2000_Luxury_Hotel_Reels_MP4_zk8hbm_thumb.webp") },
@@ -10,6 +11,23 @@ const reels = [
     { src: getAssetPath("/images/products/reels/new_video_for_viral_bundle_x0jkdn.mp4"), thumb: getAssetPath("/images/products/reels/new_video_for_viral_bundle_x0jkdn_thumb.webp") },
     { src: getAssetPath("/images/products/reels/sowar_satisefying.pdf_htv71z.mp4"), thumb: getAssetPath("/images/products/reels/sowar_satisefying.pdf_htv71z_thumb.webp") }
 ];
+
+const LazyReel: React.FC<{ src: string; thumb: string }> = ({ src, thumb }) => {
+    const videoRef = useVideoLazyLoad({ rootMargin: '300px' });
+
+    return (
+        <video
+            ref={videoRef}
+            data-src={src}
+            poster={thumb}
+            muted
+            loop
+            playsInline
+            preload="none"
+            className="w-full h-full object-cover"
+        />
+    );
+};
 
 export const ViralReelsCarousel: React.FC = () => {
     return (
@@ -32,16 +50,7 @@ export const ViralReelsCarousel: React.FC = () => {
                         {[...reels, ...reels, ...reels].map((reel, i) => (
                             <div key={i} className="flex-shrink-0 w-[140px] sm:w-[160px]">
                                 <div className="aspect-[9/16] rounded-xl overflow-hidden border border-white/10 bg-black relative group shadow-lg shadow-black/50 hover:border-amber-500/30 transition-colors">
-                                    <video
-                                        src={reel.src}
-                                        poster={reel.thumb}
-                                        autoPlay
-                                        muted
-                                        loop
-                                        playsInline
-                                        preload="auto"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <LazyReel src={reel.src} thumb={reel.thumb} />
                                 </div>
                             </div>
                         ))}

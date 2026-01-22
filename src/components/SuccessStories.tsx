@@ -2,6 +2,25 @@ import React from 'react';
 import { TweetCard } from './TweetCard';
 import { SectionHeading } from './SectionHeading';
 import { getAssetPath } from '../utils/assets';
+import { useVideoLazyLoad } from '../hooks/useVideoLazyLoad';
+
+const LazyShowcaseVideo: React.FC<{ src: string }> = ({ src }) => {
+    const videoRef = useVideoLazyLoad({ rootMargin: '300px' });
+
+    return (
+        <div className="w-[300px] aspect-square rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform hover:scale-105 duration-300 bg-black/20">
+            <video
+                ref={videoRef}
+                data-src={src}
+                className="w-full h-full object-contain"
+                muted
+                loop
+                playsInline
+                preload="none"
+            />
+        </div>
+    );
+};
 
 export const SuccessStories: React.FC = () => {
     const tweets = [
@@ -80,17 +99,7 @@ export const SuccessStories: React.FC = () => {
 
                     <div className="flex gap-8 animate-scroll-left hover:[animation-play-state:paused]" style={{ width: 'max-content' }}>
                         {[...showcaseVideos, ...showcaseVideos].map((video, i) => (
-                            <div key={i} className="w-[300px] aspect-square rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform hover:scale-105 duration-300 bg-black/20">
-                                <video
-                                    src={video}
-                                    className="w-full h-full object-contain"
-                                    autoPlay
-                                    muted
-                                    loop
-                                    playsInline
-                                    preload="auto"
-                                />
-                            </div>
+                            <LazyShowcaseVideo key={i} src={video} />
                         ))}
                     </div>
                 </div>

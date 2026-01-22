@@ -45,6 +45,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     alt={title}
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 drop-shadow-xl"
                     loading="lazy"
+                    decoding="async"
                 />
                 {badge && (
                     <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-500 text-white text-xs font-bold uppercase tracking-wider shadow-lg">
