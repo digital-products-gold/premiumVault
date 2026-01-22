@@ -1,13 +1,14 @@
 import React from 'react';
+import { getAssetPath } from '../utils/assets';
 
 const reels = [
-    { src: "/images/products/reels/2000_Luxury_Hotel_Reels_MP4_zk8hbm.mp4", thumb: "/images/products/reels/2000_Luxury_Hotel_Reels_MP4_zk8hbm_thumb.webp" },
-    { src: "/images/products/reels/di4k8pjihv7a3a21hru6.mp4", thumb: "/images/products/reels/di4k8pjihv7a3a21hru6_thumb.webp" },
-    { src: "/images/products/reels/dtws2szoiecjv25soryx.mp4", thumb: "/images/products/reels/dtws2szoiecjv25soryx_thumb.webp" },
-    { src: "/images/products/reels/intro_mld3as.mp4", thumb: "/images/products/reels/intro_mld3as_thumb.webp" },
-    { src: "/images/products/reels/mc7jrczvqdzr0mmborg6.mp4", thumb: "/images/products/reels/mc7jrczvqdzr0mmborg6_thumb.webp" },
-    { src: "/images/products/reels/new_video_for_viral_bundle_x0jkdn.mp4", thumb: "/images/products/reels/new_video_for_viral_bundle_x0jkdn_thumb.webp" },
-    { src: "/images/products/reels/sowar_satisefying.pdf_htv71z.mp4", thumb: "/images/products/reels/sowar_satisefying.pdf_htv71z_thumb.webp" }
+    { src: getAssetPath("/images/products/reels/2000_Luxury_Hotel_Reels_MP4_zk8hbm.mp4"), thumb: getAssetPath("/images/products/reels/2000_Luxury_Hotel_Reels_MP4_zk8hbm_thumb.webp") },
+    { src: getAssetPath("/images/products/reels/di4k8pjihv7a3a21hru6.mp4"), thumb: getAssetPath("/images/products/reels/di4k8pjihv7a3a21hru6_thumb.webp") },
+    { src: getAssetPath("/images/products/reels/dtws2szoiecjv25soryx.mp4"), thumb: getAssetPath("/images/products/reels/dtws2szoiecjv25soryx_thumb.webp") },
+    { src: getAssetPath("/images/products/reels/intro_mld3as.mp4"), thumb: getAssetPath("/images/products/reels/intro_mld3as_thumb.webp") },
+    { src: getAssetPath("/images/products/reels/mc7jrczvqdzr0mmborg6.mp4"), thumb: getAssetPath("/images/products/reels/mc7jrczvqdzr0mmborg6_thumb.webp") },
+    { src: getAssetPath("/images/products/reels/new_video_for_viral_bundle_x0jkdn.mp4"), thumb: getAssetPath("/images/products/reels/new_video_for_viral_bundle_x0jkdn_thumb.webp") },
+    { src: getAssetPath("/images/products/reels/sowar_satisefying.pdf_htv71z.mp4"), thumb: getAssetPath("/images/products/reels/sowar_satisefying.pdf_htv71z_thumb.webp") }
 ];
 
 export const ViralReelsCarousel: React.FC = () => {

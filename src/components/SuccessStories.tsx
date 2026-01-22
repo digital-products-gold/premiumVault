@@ -1,6 +1,7 @@
 import React from 'react';
 import { TweetCard } from './TweetCard';
 import { SectionHeading } from './SectionHeading';
+import { getAssetPath } from '../utils/assets';
 
 export const SuccessStories: React.FC = () => {
     const tweets = [
@@ -8,7 +9,7 @@ export const SuccessStories: React.FC = () => {
             name: "Ben Lang",
             handle: "benln",
             avatar: "https://pbs.twimg.com/profile_images/1713995709916012544/GHmSl9EK_normal.jpg",
-            content: "I just heard about someone selling Notion templates for high school coaches to manage their cheerleading teams. The template goes for $1,000. She’s sold to 85 coaches in the past few months. All of her sales have come from cold calling.",
+            content: "I just heard about someone selling Notion templates for high school coaches to manage their cheerleading teams. The template goes for $1,000. She's sold to 85 coaches in the past few months. All of her sales have come from cold calling.",
             date: "Apr 3, 2024",
             likes: "1.6K",
             replies: "31"
@@ -52,16 +53,16 @@ export const SuccessStories: React.FC = () => {
     ];
 
     const showcaseVideos = [
-        "/images/products/videos/0821_jrdfyv.mp4",
-        "/images/products/videos/aweh3wie2n0x4l3uimau.mp4",
-        "/images/products/videos/anime.mp4",
-        "/images/products/videos/kis-education-bundle.mp4",
-        "/images/products/videos/minecraft.mp4",
-        "/images/products/videos/n8n.mp4",
-        "/images/products/videos/nanobanana.mp4",
+        getAssetPath("/images/products/videos/0821_jrdfyv.mp4"),
+        getAssetPath("/images/products/videos/aweh3wie2n0x4l3uimau.mp4"),
+        getAssetPath("/images/products/videos/anime.mp4"),
+        getAssetPath("/images/products/videos/kis-education-bundle.mp4"),
+        getAssetPath("/images/products/videos/minecraft.mp4"),
+        getAssetPath("/images/products/videos/n8n.mp4"),
+        getAssetPath("/images/products/videos/nanobanana.mp4"),
 
-        "/images/products/videos/Untitled_design_5_eexpij.mp4",
-        "/images/products/videos/9millionplr.mp4"
+        getAssetPath("/images/products/videos/Untitled_design_5_eexpij.mp4"),
+        getAssetPath("/images/products/videos/9millionplr.mp4")
     ];
 
     return (

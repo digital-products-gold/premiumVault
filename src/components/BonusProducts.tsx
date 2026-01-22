@@ -1,13 +1,14 @@
 import React from 'react';
 import { SectionHeading } from './SectionHeading';
 import { ProductCard } from './ProductCard';
+import { getAssetPath } from '../utils/assets';
 
 export const BonusProducts: React.FC = () => {
     const bonuses = [
         {
             title: "Premium Supplier List",
             description: "Direct access to our vetted list of premium suppliers for your digital business needs.",
-            image: "/images/bonus/premiumsupplierlist.png",
+            image: getAssetPath("/images/bonus/premiumsupplierlist.png"),
             salePrice: "Free Bonus",
             price: "$197",
             badge: "Bonus #1"
@@ -15,7 +16,7 @@ export const BonusProducts: React.FC = () => {
         {
             title: "1000 Digital Product Ideas",
             description: "Never run out of inspiration with this massive list of profitable digital product ideas.",
-            image: "/images/bonus/1000 Digital Product Ideas.png",
+            image: getAssetPath("/images/bonus/1000 Digital Product Ideas.png"),
             salePrice: "Free Bonus",
             price: "$97",
             badge: "Bonus #2"
@@ -23,7 +24,7 @@ export const BonusProducts: React.FC = () => {
         {
             title: "Money Mindset Journal",
             description: "Rewire your brain for success and abundance with this powerful guided journal.",
-            image: "/images/bonus/moneymindsetjournal.png",
+            image: getAssetPath("/images/bonus/moneymindsetjournal.png"),
             salePrice: "Free Bonus",
             price: "$67",
             badge: "Bonus #3"
@@ -31,7 +32,7 @@ export const BonusProducts: React.FC = () => {
         {
             title: "Digital Product Planner",
             description: "Map out your entire digital product creation process from concept to launch.",
-            image: "/images/bonus/Digital Product Planner.png",
+            image: getAssetPath("/images/bonus/Digital Product Planner.png"),
             salePrice: "Free Bonus",
             price: "$127",
             badge: "Bonus #4"
@@ -39,7 +40,7 @@ export const BonusProducts: React.FC = () => {
         {
             title: "Online Shop Planner",
             description: "Organize every aspect of your online store for maximum efficiency and profit.",
-            image: "/images/bonus/Online Shop Planner.png",
+            image: getAssetPath("/images/bonus/Online Shop Planner.png"),
             salePrice: "Free Bonus",
             price: "$147",
             badge: "Bonus #5"
@@ -47,7 +48,7 @@ export const BonusProducts: React.FC = () => {
         {
             title: "Fitness & Weight Loss Tracker",
             description: "Track your health journey alongside your business growth with this comprehensive tracker.",
-            image: "/images/bonus/Fitness & Weight Loss Tracker.png",
+            image: getAssetPath("/images/bonus/Fitness & Weight Loss Tracker.png"),
             salePrice: "Free Bonus",
             price: "$47",
             badge: "Bonus #6"
