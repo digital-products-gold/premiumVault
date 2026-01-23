@@ -10,7 +10,7 @@ export const PricingSection: React.FC = () => {
     const handleCheckout = async () => {
         setLoading(true);
         try {
-            const response = await fetch('https://digitalstoregames.pythonanywhere.com/createStripeLink?sid=50');
+            const response = await fetch('https://digitalstoregames.pythonanywhere.com/createStripeLink?sid=50&storeid=5');
             const data = await response.json();
             if (data.checkout_url) {
                 window.open(data.checkout_url, '_blank');
