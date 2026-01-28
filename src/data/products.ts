@@ -4,37 +4,37 @@ export const products = [
     {
         title: "1100+ Animated Gym Exercise",
         description: "High-quality animated gym exercises for fitness apps, personal trainers, and workout guides. Ready to use animations covering all muscle groups.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_6zpoy66zpoy66zpo.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_6zpoy66zpoy66zpo.webp")
     },
     {
         title: "14,000 N8N Workflows",
         description: "Automate your business marketing and operations with thousands of ready-to-use N8N automation workflows.",
-        image: getAssetPath("/images/products/14000N8N.png")
+        image: getAssetPath("/images/products/14000N8N.webp")
     },
     {
         title: "500 Nano Banana Prompts",
         description: "Highly specialized AI prompts for creative writing, marketing copy, and content generation.",
-        image: getAssetPath("/images/products/500nanobananaprompts.png")
+        image: getAssetPath("/images/products/500nanobananaprompts.webp")
     },
     {
         title: "4,000 Viral Videos Bundle",
         description: "Short-form viral content ready for TikTok, Reels, and YouTube Shorts. Explode your reach.",
-        image: getAssetPath("/images/products/4000viralbundle.png")
+        image: getAssetPath("/images/products/4000viralbundle.webp")
     },
     {
         title: "Premium Anime Bundle",
         description: "Tap into the explosive Anime market! High-definition, exclusive artwork specifically crafted for sublimation. Create viral T-shirts, hoodies, mugs, and posters that fans are desperate to buy. Your key to a profitable niche store.",
-        image: getAssetPath("/images/products/PremiumAnimeBundle.png")
+        image: getAssetPath("/images/products/PremiumAnimeBundle.webp")
     },
     {
         title: "Automotive Poster Collection",
         description: "Stunning high-definition printable car posters and wall art. Perfect for print-on-demand.",
-        image: getAssetPath("/images/products/carposters.png")
+        image: getAssetPath("/images/products/carposters.webp")
     },
     {
         title: "Ultimate Coloring Collection",
         description: "Thousands of coloring pages for adults and kids. A huge market on Amazon KDP and Etsy.",
-        image: getAssetPath("/images/products/coloringcollection.png")
+        image: getAssetPath("/images/products/coloringcollection.webp")
     },
     {
         title: "Excel Template Vault",
@@ -49,17 +49,17 @@ export const products = [
     {
         title: "700 GB Udemy Courses",
         description: "Comprehensive video courses covering marketing, coding, business, and self-improvement.",
-        image: getAssetPath("/images/products/700gbUdemy.png")
+        image: getAssetPath("/images/products/700gbUdemy.webp")
     },
     {
         title: "30,500 Education Resources",
         description: "A giant library of educational materials, worksheets, and learning guides for teachers and parents.",
-        image: getAssetPath("/images/products/30500_education_resources.png")
+        image: getAssetPath("/images/products/30500_education_resources.webp")
     },
     {
         title: "600 AI Prompts",
         description: "High-quality prompts designed to unlock the full potential of advanced AI models.",
-        image: getAssetPath("/images/products/600kaiprompt.png")
+        image: getAssetPath("/images/products/600kaiprompt.webp")
     },
     {
         title: "41 in 1 Pokemon Crochet Bundle",
@@ -74,7 +74,7 @@ export const products = [
     {
         title: "500 Craft & DIY Resources",
         description: "Patterns, guides, and templates for the crafting and DIY niche.",
-        image: getAssetPath("/images/products/500craft.png")
+        image: getAssetPath("/images/products/500craft.webp")
     },
     {
         title: "50000 Mega Bundle Cartoon Characters",
@@ -89,47 +89,47 @@ export const products = [
     {
         title: "20000+ Lightroom Presets",
         description: "Transform your photos instantly! Professional presets for influencers, photographers, and content creators. One-click edits for stunning, consistent aesthetics.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_bmmokqbmmokqbmmo.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_bmmokqbmmokqbmmo.webp")
     },
     {
         title: "10000+ Editable Premium Canva Templates",
         description: "Save time and look professional. High-converting templates for social media, business, and marketing. Fully editable in Canva free or pro.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_p5dwllp5dwllp5dw.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_p5dwllp5dwllp5dw.webp")
     },
     {
         title: "40000+ HD Royalty Stock Images",
         description: "Never pay for stock photos again. A massive vault of high-resolution, royalty-free images for websites, ads, and creative projects.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_pgauyipgauyipgau.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_pgauyipgauyipgau.webp")
     },
     {
         title: "5000+ Language Learning Pack",
         description: "Master new languages quickly. Comprehensive resources including audiobooks, worksheets, and guides for popular languages around the world.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_q1hzgkq1hzgkq1hz.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_q1hzgkq1hzgkq1hz.webp")
     },
     {
         title: "9 Million+ PLR Articles",
         description: "An endless content supply! High-quality PLR articles for blogs, websites, and SEO. Covers every niche imaginable to drive traffic and authority.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_q71wiqq71wiqq71w.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_q71wiqq71wiqq71w.webp")
     },
     {
         title: "Youtube Growth Bundle",
         description: "Explode your channel growth! Thumbnails, end screens, sound effects, and strategies used by top YouTubers to gain subscribers and watch time.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_qend0tqend0tqend.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_qend0tqend0tqend.webp")
     },
     {
         title: "1000000+ Laser-cut Design",
         description: "The ultimate library for laser cutting and engraving businesses. SVG, DXF, and CDR files for wood, acrylic, and metal projects.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_vbza0wvbza0wvbza.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_vbza0wvbza0wvbza.webp")
     },
     {
         title: "6000GB+ Graphic Bundles Pack",
         description: "The biggest graphic design library ever. Vectors, illustrations, fonts, logos, and UI kits. A lifetime supply of assets for any project.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_xgydbaxgydbaxgyd.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_xgydbaxgydbaxgyd.webp")
     },
     {
         title: "150K+ Premium Reels Bundle",
         description: "Dominate short-form video! Aesthetic, viral-ready reels for Instagram, TikTok, and Shorts. Engage audiences and grow your following effortlessly.",
-        image: getAssetPath("/images/products/Gemini_Generated_Image_yrp7qwyrp7qwyrp7.png")
+        image: getAssetPath("/images/products/Gemini_Generated_Image_yrp7qwyrp7qwyrp7.webp")
     },
     {
         title: "200 Jewelry 3D Models STL Files",
