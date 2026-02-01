@@ -193,7 +193,7 @@ export const ProductVarietySection: React.FC = () => {
                                 <div className="space-y-4">
                                     <div className="flex justify-between items-center text-gray-400 text-sm">
                                         <span>Cost of Vault</span>
-                                        <span className="text-red-400">-$19.00</span>
+                                        <span className="text-red-400">-$4.90</span>
                                     </div>
                                     <div className="flex justify-between items-center text-white font-medium">
                                         <div className="flex items-center gap-2">
@@ -205,7 +205,7 @@ export const ProductVarietySection: React.FC = () => {
                                     <div className="h-px bg-white/10" />
                                     <div className="flex justify-between items-center">
                                         <span className="text-amber-400 font-bold uppercase tracking-wider text-xs">Net Profit</span>
-                                        <span className="text-2xl font-bold text-white">+$8.00</span>
+                                        <span className="text-2xl font-bold text-white">+$22.10</span>
                                     </div>
                                     <div className="text-center mt-4">
                                         <p className="text-xs text-gray-500 bg-white/5 py-2 rounded-lg">

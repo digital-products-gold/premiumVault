@@ -39,7 +39,7 @@ export const PricingSection: React.FC = () => {
                     {/* Single Lifetime Plan */}
                     <div className="relative rounded-2xl border bg-[#0f172a] border-amber-500/50 shadow-2xl shadow-amber-500/10 p-8 sm:p-10 transform hover:scale-[1.02] transition-transform duration-300 z-10">
                         <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-600 to-rose-600 text-white px-6 py-2 rounded-full text-base font-bold shadow-lg tracking-wide uppercase whitespace-nowrap animate-pulse">
-                            🔥 Special Promotion • 87% OFF
+                            🔥 Today Only • 96% OFF
                         </div>
 
                         <div className="mb-10 text-center">
@@ -49,11 +49,11 @@ export const PricingSection: React.FC = () => {
                             <div className="mt-8 flex flex-col items-center justify-center">
                                 <div className="text-gray-500 text-xl font-medium line-through mb-1">Was $150</div>
                                 <div className="flex items-baseline gap-2">
-                                    <span className="text-7xl font-bold text-white font-heading tracking-tight">$19</span>
+                                    <span className="text-7xl font-bold text-white font-heading tracking-tight">$4.90</span>
                                     <span className="text-gray-400 font-medium">one-time</span>
                                 </div>
                                 <div className="mt-3 bg-amber-500/10 border border-amber-500/20 rounded-lg px-4 py-1.5">
-                                    <span className="text-amber-500 text-sm font-bold">⚠️ Limited Time Offer</span>
+                                    <span className="text-amber-500 text-sm font-bold">⚠️ Offer Ends Today</span>
                                 </div>
                             </div>
                         </div>
@@ -78,13 +78,13 @@ export const PricingSection: React.FC = () => {
                             <div>
                                 <h4 className="text-amber-400 font-bold text-sm uppercase tracking-wide">30-Day Money Back Guarantee</h4>
                                 <p className="text-gray-400 text-xs mt-1 leading-relaxed">
-                                    If you're not 100% satisfied with the quality of these assets, we'll refund your $19. No questions asked.
+                                    If you're not 100% satisfied with the quality of these assets, we'll refund your $4.90. No questions asked.
                                 </p>
                             </div>
                         </div>
 
                         <StartNowButton
-                            text={loading ? "Processing..." : "Claim Deal for $19"}
+                            text={loading ? "Processing..." : "Claim Deal for $4.90"}
                             className="w-full justify-center py-4 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white shadow-lg shadow-amber-500/25 font-bold text-xl rounded-xl"
                             onClick={handleCheckout}
                             disabled={loading}

@@ -11,6 +11,24 @@ export default {
                 'scroll-right': 'scroll-right var(--scroll-speed, 40s) linear infinite',
                 'gradient': 'gradient 8s linear infinite',
             },
+            colors: { // Custom colors matching index.css
+                navy: {
+                    900: '#0f172a',
+                    950: '#020617',
+                },
+                gold: {
+                    500: '#f59e0b',
+                    600: '#d97706',
+                },
+                // blue-500 is standard Tailwind but we can explicit define if needed, 
+                // but standard colors like blue and orange should work if they are default.
+                // However, user might have stripped defaults or wants specific hex codes.
+                // Let's add them to be safe as per index.css
+            },
+            fontFamily: {
+                heading: ['Outfit', 'sans-serif'],
+                body: ['Inter', 'sans-serif'],
+            },
             keyframes: {
                 'scroll-left': {
                     '0%': { transform: 'translateX(0)' },

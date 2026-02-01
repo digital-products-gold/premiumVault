@@ -38,17 +38,31 @@ export const Header: React.FC = () => {
                                 {item}
                             </a>
                         ))}
+                        <a
+                            href="#recover"
+                            className="text-sm font-bold text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all border border-white/10 hover:border-white/30"
+                        >
+                            LOGIN / RECOVER
+                        </a>
                     </nav>
 
 
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden p-2 text-gray-400 hover:text-white"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    >
-                        {mobileMenuOpen ? <X /> : <Menu />}
-                    </button>
+                    {/* Mobile Controls */}
+                    <div className="flex items-center gap-3 md:hidden">
+                        <a
+                            href="#recover"
+                            className="text-xs font-bold text-white bg-white/10 hover:bg-white/20 px-3 py-2 rounded-lg transition-all border border-white/10 hover:border-white/30"
+                        >
+                            LOGIN
+                        </a>
+                        <button
+                            className="p-2 text-gray-400 hover:text-white"
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        >
+                            {mobileMenuOpen ? <X /> : <Menu />}
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -66,6 +80,13 @@ export const Header: React.FC = () => {
                                 {item}
                             </a>
                         ))}
+                        <a
+                            href="#recover"
+                            className="text-base font-bold text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg text-center border border-white/10"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            LOGIN / RECOVER
+                        </a>
                         <div className="h-px bg-white/10 my-2" />
 
                     </div>
